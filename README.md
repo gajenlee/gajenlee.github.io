@@ -26,5 +26,3 @@ bundle exec jekyll serve
 ```
 
 Then visit `http://localhost:4000` in your browser.
-
-## Structure

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact | Architect Logic</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 220, 229, 0.1) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+        .glow-hover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 48px;
+            width: 48px;
+            border-radius: 0.5rem;
+            background-color: var(--surface-container-low);
+            border: 1px solid var(--outline-variant);
+            color: var(--on-surface);
+            transition: all 0.3s ease;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 15px rgba(0, 245, 255, 0.1);
+            border-color: var(--primary-container);
+            color: var(--primary-container);
+        }
+    </style>
+</head>
+<body>
+    <!-- TopNavBar -->
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <a class="font-headline-md text-primary font-bold tracking-widest" href="index.html">
+                ARCHITECT.LOGIC
+            </a>
+            <div class="nav-links">
+                <a class="nav-link font-body-md" href="index.html">Home</a>
+                <a class="nav-link font-body-md" href="projects.html">Projects</a>
+                <a class="nav-link font-body-md" href="skills.html">Skills</a>
+                <a class="nav-link font-body-md" href="experience.html">Experience</a>
+                <a class="nav-link font-body-md active" href="contact.html">Contact</a>
+            </div>
+            <button class="menu-toggle text-primary">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="main-content flex flex-col gap-12" style="padding-top: 128px;">
+        <div class="container grid md:grid-cols-12 gap-gutter">
+            <!-- Context / Info Column -->
+            <div class="md:col-span-5 flex flex-col gap-8">
+                <div>
+                    <h1 class="font-headline-lg text-primary mb-4" style="margin-bottom: 16px;">
+                        Initialize<br />Connection.
+                    </h1>
+                    <p class="font-body-lg text-on-surface-variant max-w-md">
+                        Open a channel for discussion regarding systems architecture, technical leadership, or
+                        high-scale engineering challenges.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col gap-6 mt-8" style="margin-top: 32px;">
+                    <!-- Status Indicator -->
+                    <div class="flex items-center gap-3">
+                        <div class="relative flex" style="height: 12px; width: 12px;">
+                            <span class="absolute rounded-full bg-secondary" style="height: 100%; width: 100%; opacity: 0.75; animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;"></span>
+                            <span class="relative rounded-full bg-secondary" style="height: 12px; width: 12px; display: inline-flex;"></span>
+                        </div>
+                        <span class="font-label-caps text-secondary uppercase tracking-widest">Available for New Projects</span>
+                    </div>
+                    
+                    <!-- Direct Links -->
+                    <div class="flex gap-4">
+                        <a class="glow-hover" href="https://github.com/gajenlee" aria-label="GitHub">
+                            <span class="material-symbols-outlined icon-filled">code</span>
+                        </a>
+                        <a class="glow-hover" href="mailto:leegajen@gmail.com" aria-label="Email">
+                            <span class="material-symbols-outlined icon-filled">mail</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Code Snippet -->
+                    <div class="font-code-sm text-on-surface-variant p-6 rounded-lg border" style="background-color: #020617; margin-top: 32px;">
+                        <span class="text-primary-container">const</span> contact <span class="text-secondary">=</span> {<br />
+                        &nbsp;&nbsp;email: <span class="text-tertiary-fixed-dim">'leegajen@gmail.com'</span>,<br />
+                        &nbsp;&nbsp;location: <span class="text-tertiary-fixed-dim">'Sri Lanka, Uva, Badulla, Bandarawela'</span><br />
+                        };
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="font-label-caps text-on-surface" style="opacity: 0.8;">
+                © 2026 Gajendran Ramanathan. Precision Engineered.
+            </div>
+            <nav class="flex gap-gutter font-code-sm text-on-surface-variant footer-links">
+                <a href="https://github.com/gajenlee">GitHub</a>
+                <a href="https://www.linkedin.com/in/gajendran-ramanathan-b67b47170/">LinkedIn</a>
+                <a href="https://x.com/gajenlee">Twitter</a>
+                <a href="mailto:leegajen@gmail.com">Email</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <style>
+        @keyframes ping {
+            75%, 100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+    </style>
+</body>
+</html>

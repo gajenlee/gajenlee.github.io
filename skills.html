@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Skills &amp; Expertise | ARCHITECT.LOGIC</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .skill-bar-fill {
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- TopNavBar -->
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <a class="font-headline-md text-primary font-bold tracking-widest" href="index.html">
+                ARCHITECT.LOGIC
+            </a>
+            <div class="nav-links">
+                <a class="nav-link font-body-md" href="index.html">Home</a>
+                <a class="nav-link font-body-md" href="projects.html">Projects</a>
+                <a class="nav-link font-body-md active" href="skills.html">Skills</a>
+                <a class="nav-link font-body-md" href="experience.html">Experience</a>
+                <a class="nav-link font-body-md" href="contact.html">Contact</a>
+            </div>
+            <button class="menu-toggle text-primary">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="main-content flex flex-col gap-12" style="padding-top: 128px;">
+        <div class="container flex flex-col gap-12">
+            <!-- Header Section -->
+            <header class="flex flex-col gap-6" style="margin-bottom: 32px;">
+                <h1 class="font-headline-lg text-primary">
+                    Technical Competency Matrix
+                </h1>
+                <p class="font-body-lg text-on-surface-variant max-w-3xl" style="max-width: 48rem;">
+                    A structured breakdown of languages, frameworks, and specialized knowledge acquired over years of
+                    architecting high-scale systems. The focus remains on precision, scalability, and robust diagnostic
+                    capabilities.
+                </p>
+            </header>
+            
+            <!-- Skills Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <!-- Core Languages (Bento Span 8) -->
+                <div class="card md:col-span-8 flex flex-col p-8">
+                    <div class="flex justify-between items-start mb-8" style="align-items: flex-start;">
+                        <div class="flex items-center gap-3 text-primary">
+                            <span class="material-symbols-outlined icon-filled">code</span>
+                            <h2 class="font-headline-md">Core Languages</h2>
+                        </div>
+                        <span class="font-label-caps text-secondary-fixed-dim bg-secondary-fixed-dim px-2 py-1 rounded" style="background-color: rgba(78, 222, 163, 0.1);">SYNTAX_PROFILES</span>
+                    </div>
+                    <div class="flex flex-col gap-6" style="flex-grow: 1;">
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-code-sm text-on-surface">Python (Data &amp; Backend)</span>
+                                <span class="font-label-caps text-on-surface-variant">Expert</span>
+                            </div>
+                            <div style="height: 4px; width: 100%; background-color: var(--surface-container-highest); border-radius: 2px; overflow: hidden;">
+                                <div class="skill-bar-fill bg-primary-container" style="height: 100%; width: 95%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-code-sm text-on-surface">TypeScript (Fullstack)</span>
+                                <span class="font-label-caps text-on-surface-variant">Expert</span>
+                            </div>
+                            <div style="height: 4px; width: 100%; background-color: var(--surface-container-highest); border-radius: 2px; overflow: hidden;">
+                                <div class="skill-bar-fill bg-primary-container" style="height: 100%; width: 90%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-code-sm text-on-surface">C# (.NET Ecosystem)</span>
+                                <span class="font-label-caps text-on-surface-variant">Advanced</span>
+                            </div>
+                            <div style="height: 4px; width: 100%; background-color: var(--surface-container-highest); border-radius: 2px; overflow: hidden;">
+                                <div class="skill-bar-fill bg-primary-container" style="height: 100%; width: 85%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-code-sm text-on-surface">Go (Microservices)</span>
+                                <span class="font-label-caps text-on-surface-variant">Proficient</span>
+                            </div>
+                            <div style="height: 4px; width: 100%; background-color: var(--surface-container-highest); border-radius: 2px; overflow: hidden;">
+                                <div class="skill-bar-fill bg-primary-container" style="height: 100%; width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialized Knowledge (Bento Span 4) -->
+                <div class="card md:col-span-4 p-8">
+                    <div class="flex items-center gap-3 text-secondary mb-8">
+                        <span class="material-symbols-outlined icon-filled">memory</span>
+                        <h2 class="font-body-lg font-bold">Specialized Knowledge</h2>
+                    </div>
+                    <div class="flex" style="flex-wrap: wrap; gap: 12px;">
+                        <span class="font-label-caps bg-surface-container-highest text-primary-fixed-dim px-3 py-2 border rounded">System Diagnostics</span>
+                        <span class="font-label-caps bg-surface-container-highest text-secondary-fixed-dim px-3 py-2 border rounded">Machine Learning Ops</span>
+                        <span class="font-label-caps bg-surface-container-highest text-primary-fixed-dim px-3 py-2 border rounded">UI/UX Architecture</span>
+                        <span class="font-label-caps bg-surface-container-highest text-secondary-fixed-dim px-3 py-2 border rounded">Cloud Native</span>
+                        <span class="font-label-caps bg-surface-container-highest text-primary-fixed-dim px-3 py-2 border rounded">Distributed Systems</span>
+                    </div>
+                </div>
+                
+                <!-- Frameworks & Libraries (Bento Span 6) -->
+                <div class="card md:col-span-6 p-8">
+                    <div class="flex justify-between items-start mb-6 pb-4 border-b">
+                        <h2 class="font-body-lg font-bold text-on-surface">Frameworks &amp; Libraries</h2>
+                        <span class="font-label-caps text-on-surface-variant">STRUCT_DEF</span>
+                    </div>
+                    <ul class="flex flex-col gap-4 font-code-sm text-on-surface-variant">
+                        <li class="flex items-center gap-3">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--primary-container);"></div>
+                            <span><strong class="text-on-surface">Backend:</strong> ASP.NET Core, FastAPI, Express.js</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--primary-container);"></div>
+                            <span><strong class="text-on-surface">Frontend:</strong> React, Next.js, Vue.js</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--primary-container);"></div>
+                            <span><strong class="text-on-surface">Mobile:</strong> React Native, Flutter</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--primary-container);"></div>
+                            <span><strong class="text-on-surface">Testing:</strong> PyTest, Jest, xUnit</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Database & Infrastructure (Bento Span 6) -->
+                <div class="card md:col-span-6 p-8">
+                    <div class="flex justify-between items-start mb-6 pb-4 border-b">
+                        <h2 class="font-body-lg font-bold text-on-surface">Database &amp; Infrastructure</h2>
+                        <span class="font-label-caps text-on-surface-variant">DATA_STORE</span>
+                    </div>
+                    <ul class="flex flex-col gap-4 font-code-sm text-on-surface-variant">
+                        <li class="flex items-center gap-3">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--secondary-container);"></div>
+                            <span><strong class="text-on-surface">Relational:</strong> PostgreSQL, Oracle, SQL Server</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--secondary-container);"></div>
+                            <span><strong class="text-on-surface">NoSQL:</strong> MongoDB, Redis, Cassandra</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--secondary-container);"></div>
+                            <span><strong class="text-on-surface">Infrastructure:</strong> Docker, Kubernetes, Terraform</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--secondary-container);"></div>
+                            <span><strong class="text-on-surface">Security:</strong> HashiCorp Vault, OAuth2</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="font-label-caps text-on-surface" style="opacity: 0.8;">
+                © 2026 Gajendran Ramanathan. Precision Engineered.
+            </div>
+            <nav class="flex gap-gutter font-code-sm text-on-surface-variant footer-links">
+                <a href="https://github.com/gajenlee">GitHub</a>
+                <a href="https://www.linkedin.com/in/gajendran-ramanathan-b67b47170/">LinkedIn</a>
+                <a href="https://x.com/gajenlee">Twitter</a>
+                <a href="mailto:leegajen@gmail.com">Email</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

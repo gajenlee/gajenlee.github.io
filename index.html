@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en">
-
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -9,195 +7,67 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet" />
     <!-- Material Symbols -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <!-- Theme Configuration -->
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "error-container": "#93000a",
-                        "on-secondary-fixed-variant": "#005236",
-                        "on-error-container": "#ffdad6",
-                        "error": "#ffb4ab",
-                        "outline": "#849495",
-                        "on-primary-fixed-variant": "#004f53",
-                        "surface-dim": "#0b1326",
-                        "inverse-surface": "#dae2fd",
-                        "on-primary-container": "#006c71",
-                        "surface-container-low": "#131b2e",
-                        "on-primary": "#003739",
-                        "secondary-fixed-dim": "#4edea3",
-                        "inverse-on-surface": "#283044",
-                        "secondary-container": "#00a572",
-                        "surface-tint": "#00dce5",
-                        "on-tertiary-fixed": "#07006c",
-                        "on-background": "#dae2fd",
-                        "on-secondary-fixed": "#002113",
-                        "tertiary-fixed-dim": "#c0c1ff",
-                        "tertiary-fixed": "#e1e0ff",
-                        "on-error": "#690005",
-                        "outline-variant": "#3a494a",
-                        "on-secondary": "#003824",
-                        "surface-variant": "#2d3449",
-                        "tertiary-container": "#dbdaff",
-                        "primary-fixed-dim": "#00dce5",
-                        "surface-container-lowest": "#060e20",
-                        "on-secondary-container": "#00311f",
-                        "on-primary-fixed": "#002021",
-                        "surface": "#0b1326",
-                        "on-tertiary-fixed-variant": "#2f2ebe",
-                        "tertiary": "#fcf8ff",
-                        "primary-fixed": "#63f7ff",
-                        "primary-container": "#00f5ff",
-                        "surface-container": "#171f33",
-                        "secondary-fixed": "#6ffbbe",
-                        "on-surface": "#dae2fd",
-                        "primary": "#e9feff",
-                        "on-surface-variant": "#b9caca",
-                        "surface-container-highest": "#2d3449",
-                        "secondary": "#4edea3",
-                        "background": "#0b1326",
-                        "surface-container-high": "#222a3d",
-                        "inverse-primary": "#00696e",
-                        "surface-bright": "#31394d",
-                        "on-tertiary": "#1000a9",
-                        "on-tertiary-container": "#4c4ed9"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "base": "8px",
-                        "margin-mobile": "16px",
-                        "margin-desktop": "64px",
-                        "gutter": "24px",
-                        "max-width": "1280px"
-                    },
-                    "fontFamily": {
-                        "headline-lg": ["Inter"],
-                        "headline-md": ["Inter"],
-                        "body-lg": ["Inter"],
-                        "body-md": ["Inter"],
-                        "label-caps": ["JetBrains Mono"],
-                        "headline-lg-mobile": ["Inter"],
-                        "code-sm": ["JetBrains Mono"]
-                    },
-                    "fontSize": {
-                        "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "headline-md": ["30px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
-                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
-                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "code-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }]
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
     <style>
-        /* Minimal Blueprint Grid Background */
-        .bg-blueprint {
-            background-size: 40px 40px;
-            background-image:
-                linear-gradient(to right, rgba(58, 73, 74, 0.1) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(58, 73, 74, 0.1) 1px, transparent 1px);
-        }
-
-        /* Subtle Glow on hover for Level 1 Cards */
-        .hover-glow:hover {
-            box-shadow: 0px 0px 15px rgba(0, 245, 255, 0.1);
+        .hero-code-block { display: none; }
+        @media (min-width: 768px) {
+            .hero-code-block { display: block; }
         }
     </style>
 </head>
-
-<body
-    class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col relative overflow-x-hidden">
-    <!-- TopNavBar (From JSON) -->
-    <nav
-        class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant transition-all duration-200 ease-in-out">
-        <div
-            class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
-            <!-- Brand -->
-            <div class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">
+<body>
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <a class="font-headline-md text-primary font-bold tracking-widest" href="index.html">
                 ARCHITECT.LOGIC
-            </div>
-            <!-- Links (Hidden on mobile) -->
-            <div class="hidden md:flex items-center gap-8">
-                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-fixed-dim duration-300 transition-colors"
-                    href="/projects.html">Projects</a>
-                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-fixed-dim duration-300 transition-colors"
-                    href="#">Skills</a>
-                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-fixed-dim duration-300 transition-colors"
-                    href="#">Experience</a>
-                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-fixed-dim duration-300 transition-colors"
-                    href="#">Contact</a>
-            </div>
-            <!-- Trailing Action -->
-            <a class="hidden md:inline-flex items-center justify-center border border-outline-variant px-4 py-2 rounded font-label-caps text-label-caps text-on-surface hover:bg-surface-variant transition-colors hover:shadow-[0_0_15px_rgba(0,245,255,0.1)]"
-                href="#">
-                Download Resume
             </a>
-            <!-- Mobile Menu Toggle (Decorative for this scope) -->
-            <button class="md:hidden text-primary">
+            <div class="nav-links">
+                <a class="nav-link font-body-md" href="index.html">Home</a>
+                <a class="nav-link font-body-md" href="projects.html">Projects</a>
+                <a class="nav-link font-body-md" href="skills.html">Skills</a>
+                <a class="nav-link font-body-md" href="experience.html">Experience</a>
+                <a class="nav-link font-body-md" href="contact.html">Contact</a>
+            </div>
+            <button class="menu-toggle text-primary">
                 <span class="material-symbols-outlined">menu</span>
             </button>
         </div>
     </nav>
-    <!-- Main Content Canvas -->
-    <main class="flex-grow flex flex-col pt-16">
+    <main class="main-content" style="padding-top: 64px; padding-bottom: 0;">
         <!-- Hero Section -->
-        <section class="relative min-h-[85vh] flex items-center bg-blueprint px-margin-mobile md:px-margin-desktop">
-            <div class="max-w-max-width mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center z-10">
+        <section class="bg-blueprint relative flex items-center" style="min-height: 85vh; padding-top: 64px;">
+            <div class="container grid md:grid-cols-12 gap-gutter items-center z-10" style="position: relative;">
                 <!-- Text Content -->
-                <div class="col-span-1 md:col-span-7 flex flex-col gap-8">
-                    <div class="inline-flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                        <span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">System
-                            Online</span>
+                <div class="md:col-span-7 flex flex-col gap-8">
+                    <div class="flex items-center gap-2">
+                        <span class="pulse-dot"></span>
+                        <span class="font-label-caps text-secondary uppercase tracking-widest">System Online</span>
                     </div>
-                    <h1
-                        class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">
+                    <h1 class="font-headline-lg text-primary">
                         Architecting<br />Digital Solutions
                     </h1>
-                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    <p class="font-body-lg text-on-surface-variant max-w-2xl" style="max-width: 42rem;">
                         Precision-engineered software systems designed for scale. Specializing in high-performance
                         full-stack development and applied machine learning architectures.
                     </p>
-                    <div class="pt-4 flex gap-4">
-                        <a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-caps text-label-caps px-8 py-4 rounded transition-colors hover:bg-primary uppercase tracking-widest"
-                            href="#projects">
+                    <div class="mt-4 flex gap-4">
+                        <a class="btn-primary" href="projects.html">
                             View Projects
                         </a>
                     </div>
                 </div>
                 <!-- Abstract Visual / Code Block -->
-                <div class="hidden md:block col-span-5 relative">
-                    <div
-                        class="bg-[#020617] border border-outline-variant rounded-lg p-6 font-code-sm text-code-sm text-on-surface shadow-2xl relative overflow-hidden group">
-                        <!-- Decorative Header -->
-                        <div class="flex items-center justify-between border-b border-outline-variant pb-4 mb-4">
-                            <span class="text-outline">architecture.ts</span>
-                            <span class="material-symbols-outlined text-outline text-sm">code</span>
+                <div class="md:col-span-5 relative hero-code-block">
+                    <div class="card p-6" style="background-color: #020617;">
+                        <div class="flex justify-between border-b border-outline-variant pb-4 mb-4">
+                            <span class="text-outline font-code-sm">architecture.ts</span>
+                            <span class="material-symbols-outlined text-outline" style="font-size: 18px;">code</span>
                         </div>
-                        <!-- Code Content -->
-                        <pre class="text-on-surface-variant leading-relaxed"><span class="text-secondary">import</span> { Scale, Predict } <span class="text-secondary">from</span> <span class="text-primary-container">'@core/systems'</span>;
+                        <pre class="font-code-sm text-on-surface-variant" style="white-space: pre-wrap;"><span class="text-secondary">import</span> { Scale, Predict } <span class="text-secondary">from</span> <span class="text-primary-container">'@core/systems'</span>;
 
 <span class="text-secondary">class</span> DigitalSolution <span class="text-secondary">implements</span> Architect {
   <span class="text-primary-container">stack</span>: string[] = [<span class="text-primary-container">'TypeScript'</span>, <span class="text-primary-container">'Python'</span>];
@@ -210,112 +80,75 @@
     <span class="text-outline">/* Initializing PyTorch tensors */</span>
     <span class="text-secondary">await</span> Predict.load(SVM_KERNEL);
   }
-}
-                        </pre>
-                        <!-- Glow effect -->
-                        <div
-                            class="absolute inset-0 border border-primary/0 group-hover:border-primary/20 transition-colors duration-500 rounded-lg pointer-events-none">
-                        </div>
+}</pre>
                     </div>
                 </div>
             </div>
             <!-- Subtle bottom fade -->
-            <div
-                class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-background to-transparent pointer-events-none">
-            </div>
+            <div class="absolute inset-0" style="top: auto; height: 128px; background: linear-gradient(to top, var(--background), transparent); pointer-events: none;"></div>
         </section>
+        
         <!-- Core Skills Section -->
-        <section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
-            <div class="max-w-max-width mx-auto">
-                <div class="mb-12 flex flex-col gap-2">
-                    <h2 class="font-headline-md text-headline-md text-on-surface">Core Competencies</h2>
-                    <p class="font-code-sm text-code-sm text-outline uppercase tracking-widest">// Technical Stack
-                        Overview</p>
+        <section class="bg-surface-container-lowest" style="padding-top: 96px; padding-bottom: 96px;">
+            <div class="container">
+                <div class="flex flex-col gap-2 mb-12">
+                    <h2 class="font-headline-md text-on-surface">Core Competencies</h2>
+                    <p class="font-code-sm text-outline uppercase tracking-widest">// Technical Stack Overview</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <div class="grid md:grid-cols-2 gap-gutter">
                     <!-- Core Architecture Card -->
-                    <div
-                        class="bg-surface-container border border-outline-variant rounded-lg p-8 relative hover-glow transition-all duration-300">
-                        <div class="absolute top-6 right-6 font-label-caps text-label-caps text-outline">
-                            STRUCTURAL
-                        </div>
+                    <div class="card p-8">
+                        <div class="absolute font-label-caps text-outline" style="top: 24px; right: 24px;">STRUCTURAL</div>
                         <div class="flex items-center gap-4 mb-6">
-                            <span class="material-symbols-outlined text-primary-container"
-                                style="font-variation-settings: 'FILL' 1;">developer_board</span>
-                            <h3 class="font-body-lg text-body-lg font-bold text-on-surface">Core Architecture</h3>
+                            <span class="material-symbols-outlined text-primary-container icon-filled">developer_board</span>
+                            <h3 class="font-body-lg font-bold text-on-surface">Core Architecture</h3>
                         </div>
-                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">
-                            Designing resilient, scalable backend services and responsive client interfaces using
-                            strongly-typed ecosystems.
+                        <p class="font-body-md text-on-surface-variant mb-8">
+                            Designing resilient, scalable backend services and responsive client interfaces using strongly-typed ecosystems.
                         </p>
-                        <div class="flex flex-wrap gap-3">
-                            <span
-                                class="bg-surface text-primary-container border border-outline-variant font-code-sm text-code-sm px-3 py-1.5 rounded">TypeScript</span>
-                            <span
-                                class="bg-surface text-primary-container border border-outline-variant font-code-sm text-code-sm px-3 py-1.5 rounded">Python</span>
-                            <span
-                                class="bg-surface text-primary-container border border-outline-variant font-code-sm text-code-sm px-3 py-1.5 rounded">ASP.NET
-                                Core</span>
-                            <span
-                                class="bg-surface text-primary-container border border-outline-variant font-code-sm text-code-sm px-3 py-1.5 rounded">React
-                                / Next.js</span>
-                            <span
-                                class="bg-surface text-primary-container border border-outline-variant font-code-sm text-code-sm px-3 py-1.5 rounded">Docker</span>
+                        <div class="flex" style="flex-wrap: wrap; gap: 12px;">
+                            <span class="bg-surface text-primary-container border px-3 py-1-5 rounded font-code-sm">TypeScript</span>
+                            <span class="bg-surface text-primary-container border px-3 py-1-5 rounded font-code-sm">Python</span>
+                            <span class="bg-surface text-primary-container border px-3 py-1-5 rounded font-code-sm">ASP.NET Core</span>
+                            <span class="bg-surface text-primary-container border px-3 py-1-5 rounded font-code-sm">React / Next.js</span>
+                            <span class="bg-surface text-primary-container border px-3 py-1-5 rounded font-code-sm">Docker</span>
                         </div>
                     </div>
                     <!-- Machine Learning Card -->
-                    <div
-                        class="bg-surface-container border border-outline-variant rounded-lg p-8 relative hover-glow transition-all duration-300">
-                        <div class="absolute top-6 right-6 font-label-caps text-label-caps text-outline">
-                            DATA_SCIENCE
-                        </div>
+                    <div class="card p-8">
+                        <div class="absolute font-label-caps text-outline" style="top: 24px; right: 24px;">DATA_SCIENCE</div>
                         <div class="flex items-center gap-4 mb-6">
-                            <span class="material-symbols-outlined text-secondary-container"
-                                style="font-variation-settings: 'FILL' 1;">memory</span>
-                            <h3 class="font-body-lg text-body-lg font-bold text-on-surface">Machine Learning</h3>
+                            <span class="material-symbols-outlined text-secondary-container icon-filled">memory</span>
+                            <h3 class="font-body-lg font-bold text-on-surface">Machine Learning</h3>
                         </div>
-                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">
-                            Implementing and optimizing predictive models, neural networks, and data pipelines for
-                            complex analytical tasks.
+                        <p class="font-body-md text-on-surface-variant mb-8">
+                            Implementing and optimizing predictive models, neural networks, and data pipelines for complex analytical tasks.
                         </p>
-                        <div class="flex flex-wrap gap-3">
-                            <span
-                                class="bg-surface text-secondary-container border border-outline-variant font-code-sm text-code-sm px-3 py-1.5 rounded">PyTorch</span>
-                            <span
-                                class="bg-surface text-secondary-container border border-outline-variant font-code-sm text-code-sm px-3 py-1.5 rounded">Scikit-Learn</span>
-                            <span
-                                class="bg-surface text-secondary-container border border-outline-variant font-code-sm text-code-sm px-3 py-1.5 rounded">SVM</span>
-                            <span
-                                class="bg-surface text-secondary-container border border-outline-variant font-code-sm text-code-sm px-3 py-1.5 rounded">TensorFlow</span>
-                            <span
-                                class="bg-surface text-secondary-container border border-outline-variant font-code-sm text-code-sm px-3 py-1.5 rounded">Pandas</span>
+                        <div class="flex" style="flex-wrap: wrap; gap: 12px;">
+                            <span class="bg-surface text-secondary-container border px-3 py-1-5 rounded font-code-sm">PyTorch</span>
+                            <span class="bg-surface text-secondary-container border px-3 py-1-5 rounded font-code-sm">Scikit-Learn</span>
+                            <span class="bg-surface text-secondary-container border px-3 py-1-5 rounded font-code-sm">SVM</span>
+                            <span class="bg-surface text-secondary-container border px-3 py-1-5 rounded font-code-sm">TensorFlow</span>
+                            <span class="bg-surface text-secondary-container border px-3 py-1-5 rounded font-code-sm">Pandas</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Footer (From JSON) -->
-    <footer class="w-full py-12 bg-surface-container-lowest border-t border-outline-variant">
-        <div
-            class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto gap-gutter">
-            <!-- Brand / Copyright -->
-            <div class="font-label-caps text-label-caps text-on-surface">
-                © 2024 Architect Logic. Precision Engineered.
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="font-label-caps text-on-surface" style="opacity: 0.8;">
+                © 2026 Gajendran Ramanathan. Precision Engineered.
             </div>
-            <!-- Links -->
-            <div class="flex gap-6">
-                <a class="font-code-sm text-code-sm text-on-surface-variant hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100"
-                    href="#">GitHub</a>
-                <a class="font-code-sm text-code-sm text-on-surface-variant hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100"
-                    href="#">LinkedIn</a>
-                <a class="font-code-sm text-code-sm text-on-surface-variant hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100"
-                    href="#">Twitter</a>
-                <a class="font-code-sm text-code-sm text-on-surface-variant hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100"
-                    href="#">Email</a>
-            </div>
+            <nav class="flex gap-gutter font-code-sm text-on-surface-variant footer-links">
+                <a href="https://github.com/gajenlee">GitHub</a>
+                <a href="https://www.linkedin.com/in/gajendran-ramanathan-b67b47170/">LinkedIn</a>
+                <a href="https://x.com/gajenlee">Twitter</a>
+                <a href="mailto:leegajen@gmail.com">Email</a>
+            </nav>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
-
 </html>

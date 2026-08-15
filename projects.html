@@ -35,9 +35,12 @@
                 <a class="nav-link font-body-md" href="experience.html">Experience</a>
                 <a class="nav-link font-body-md" href="contact.html">Contact</a>
             </div>
-            <button class="menu-toggle text-primary">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
+            <div class="flex items-center gap-4">
+                <a href="contact.html" class="btn-primary btn-glow nav-cta" style="padding: 10px 24px;">Start a Project</a>
+                <button class="menu-toggle text-primary">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
         </div>
     </nav>
     <!-- Main Content -->
@@ -56,9 +59,9 @@
             <!-- Projects Grid -->
             <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
                 <!-- Project Card 1 -->
-                <article class="card flex flex-col gap-6">
+                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
-                        <span class="material-symbols-outlined text-primary" style="transition: color 0.3s;" onmouseover="this.style.color='var(--primary-fixed)'" onmouseout="this.style.color='var(--primary)'">api</span>
+                        <span class="material-symbols-outlined text-primary">api</span>
                         <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">Enterprise</span>
                     </div>
                     <div class="flex flex-col gap-2" style="flex-grow: 1;">
@@ -74,11 +77,12 @@
                         <span class="font-code-sm bg-primary-container text-on-primary-container px-2 py-1 rounded-sm">React Native</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">SQL Server</span>
                     </div>
+                    <div class="card-hint">Read Case Study</div>
                 </article>
                 <!-- Project Card 2 -->
-                <article class="card flex flex-col gap-6">
+                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
-                        <span class="material-symbols-outlined text-secondary" style="transition: color 0.3s;" onmouseover="this.style.color='var(--secondary-fixed)'" onmouseout="this.style.color='var(--secondary)'">smart_toy</span>
+                        <span class="material-symbols-outlined text-secondary">smart_toy</span>
                         <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">AI / ML</span>
                     </div>
                     <div class="flex flex-col gap-2" style="flex-grow: 1;">
@@ -93,11 +97,12 @@
                         <span class="font-code-sm bg-secondary-container text-on-secondary-container px-2 py-1 rounded-sm">LangChain</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">React</span>
                     </div>
+                    <div class="card-hint">Read Case Study</div>
                 </article>
                 <!-- Project Card 3 -->
-                <article class="card flex flex-col gap-6">
+                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
-                        <span class="material-symbols-outlined text-primary" style="transition: color 0.3s;" onmouseover="this.style.color='var(--primary-fixed)'" onmouseout="this.style.color='var(--primary)'">movie</span>
+                        <span class="material-symbols-outlined text-primary">movie</span>
                         <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">Automation</span>
                     </div>
                     <div class="flex flex-col gap-2" style="flex-grow: 1;">
@@ -112,11 +117,12 @@
                         <span class="font-code-sm bg-primary-container text-on-primary-container px-2 py-1 rounded-sm">FFmpeg</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">AWS S3</span>
                     </div>
+                    <div class="card-hint">Read Case Study</div>
                 </article>
                 <!-- Project Card 4 -->
-                <article class="card flex flex-col gap-6">
+                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
-                        <span class="material-symbols-outlined text-primary" style="transition: color 0.3s;" onmouseover="this.style.color='var(--primary-fixed)'" onmouseout="this.style.color='var(--primary)'">school</span>
+                        <span class="material-symbols-outlined text-primary">school</span>
                         <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">SaaS</span>
                     </div>
                     <div class="flex flex-col gap-2" style="flex-grow: 1;">
@@ -132,11 +138,12 @@
                         <span class="font-code-sm bg-primary-container text-on-primary-container px-2 py-1 rounded-sm">PostgreSQL</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">Prisma</span>
                     </div>
+                    <div class="card-hint">Read Case Study</div>
                 </article>
                 <!-- Project Card 5 -->
-                <article class="card flex flex-col gap-6">
+                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
-                        <span class="material-symbols-outlined text-secondary" style="transition: color 0.3s;" onmouseover="this.style.color='var(--secondary-fixed)'" onmouseout="this.style.color='var(--secondary)'">shield</span>
+                        <span class="material-symbols-outlined text-secondary">shield</span>
                         <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">AI / ML</span>
                     </div>
                     <div class="flex flex-col gap-2" style="flex-grow: 1;">
@@ -151,11 +158,12 @@
                         <span class="font-code-sm bg-secondary-container text-on-secondary-container px-2 py-1 rounded-sm">scikit-learn</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">Pandas</span>
                     </div>
+                    <div class="card-hint">Read Case Study</div>
                 </article>
                 <!-- Project Card 6 -->
-                <article class="card flex flex-col gap-6">
+                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
-                        <span class="material-symbols-outlined text-primary" style="transition: color 0.3s;" onmouseover="this.style.color='var(--primary-fixed)'" onmouseout="this.style.color='var(--primary)'">shopping_cart</span>
+                        <span class="material-symbols-outlined text-primary">shopping_cart</span>
                         <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">Web</span>
                     </div>
                     <div class="flex flex-col gap-2" style="flex-grow: 1;">
@@ -171,6 +179,7 @@
                         <span class="font-code-sm bg-primary-container text-on-primary-container px-2 py-1 rounded-sm">MySQL</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">JavaScript</span>
                     </div>
+                    <div class="card-hint">Read Case Study</div>
                 </article>
             </section>
         </div>

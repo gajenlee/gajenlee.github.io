@@ -32,9 +32,12 @@
                 <a class="nav-link font-body-md" href="experience.html">Experience</a>
                 <a class="nav-link font-body-md" href="contact.html">Contact</a>
             </div>
-            <button class="menu-toggle text-primary">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
+            <div class="flex items-center gap-4">
+                <a href="contact.html" class="btn-primary btn-glow nav-cta" style="padding: 10px 24px;">Start a Project</a>
+                <button class="menu-toggle text-primary">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
         </div>
     </nav>
     <main class="main-content" style="padding-top: 64px; padding-bottom: 0;">
@@ -45,24 +48,26 @@
                 <div class="md:col-span-7 flex flex-col gap-8">
                     <div class="flex items-center gap-2">
                         <span class="pulse-dot"></span>
-                        <span class="font-label-caps text-secondary uppercase tracking-widest">System Online</span>
+                        <span class="font-label-caps text-secondary uppercase tracking-widest">Available for Hire</span>
                     </div>
-                    <h1 class="font-headline-lg text-primary">
-                        Architecting<br />Digital Solutions
+                    <h1 class="font-headline-lg text-primary" style="font-size: 56px; line-height: 1.1;">
+                        I engineer high-performance software that solves complex business problems.
                     </h1>
-                    <p class="font-body-lg text-on-surface-variant max-w-2xl" style="max-width: 42rem;">
-                        Precision-engineered software systems designed for scale. Specializing in high-performance
-                        full-stack development and applied machine learning architectures.
+                    <p class="font-body-lg text-on-surface-variant max-w-2xl" style="max-width: 42rem; font-size: 20px;">
+                        I partner with ambitious companies to architect, build, and scale custom web applications, APIs, and AI integrations. Let's turn your vision into a robust digital reality.
                     </p>
                     <div class="mt-4 flex gap-4">
-                        <a class="btn-primary" href="projects.html">
-                            View Projects
+                        <a class="btn-primary btn-glow" href="contact.html">
+                            Start a Project
+                        </a>
+                        <a class="btn-secondary" href="projects.html">
+                            View My Work
                         </a>
                     </div>
                 </div>
                 <!-- Abstract Visual / Code Block -->
                 <div class="md:col-span-5 relative hero-code-block">
-                    <div class="card p-6" style="background-color: #020617;">
+                    <div class="card p-6" style="background-color: rgba(2, 6, 23, 0.7); backdrop-filter: blur(12px);">
                         <div class="flex justify-between border-b border-outline-variant pb-4 mb-4">
                             <span class="text-outline font-code-sm">architecture.ts</span>
                             <span class="material-symbols-outlined text-outline" style="font-size: 18px;">code</span>
@@ -133,6 +138,51 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section style="padding-top: 96px; padding-bottom: 96px; background-color: var(--surface);">
+            <div class="container">
+                <div class="flex flex-col gap-2 mb-12 text-center items-center">
+                    <h2 class="font-headline-md text-primary">How I Can Help You</h2>
+                    <p class="font-body-lg text-on-surface-variant max-w-2xl">I provide end-to-end engineering services tailored to your specific project requirements.</p>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-gutter">
+                    <div class="card p-8 flex flex-col gap-4 text-center items-center">
+                        <div class="flex items-center justify-center rounded-full bg-primary-container text-on-primary-container mb-4" style="width: 64px; height: 64px;">
+                            <span class="material-symbols-outlined icon-filled" style="font-size: 32px;">web</span>
+                        </div>
+                        <h3 class="font-body-lg font-bold text-on-surface">Custom Web Apps</h3>
+                        <p class="font-body-md text-on-surface-variant">Building fast, responsive, and scalable single-page applications using React, Next.js, and modern CSS.</p>
+                    </div>
+                    <div class="card p-8 flex flex-col gap-4 text-center items-center">
+                        <div class="flex items-center justify-center rounded-full bg-secondary-container text-on-secondary-container mb-4" style="width: 64px; height: 64px;">
+                            <span class="material-symbols-outlined icon-filled" style="font-size: 32px;">dns</span>
+                        </div>
+                        <h3 class="font-body-lg font-bold text-on-surface">API Development</h3>
+                        <p class="font-body-md text-on-surface-variant">Designing robust, secure RESTful and GraphQL APIs with Node.js, Python, or ASP.NET Core.</p>
+                    </div>
+                    <div class="card p-8 flex flex-col gap-4 text-center items-center">
+                        <div class="flex items-center justify-center rounded-full bg-primary-container text-on-primary-container mb-4" style="width: 64px; height: 64px;">
+                            <span class="material-symbols-outlined icon-filled" style="font-size: 32px;">smart_toy</span>
+                        </div>
+                        <h3 class="font-body-lg font-bold text-on-surface">AI Integration</h3>
+                        <p class="font-body-md text-on-surface-variant">Implementing LLMs, custom chatbots, and machine learning pipelines into your existing workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="bg-surface-container-lowest" style="padding-top: 96px; padding-bottom: 96px; border-top: 1px solid var(--outline-variant);">
+            <div class="container text-center flex flex-col items-center gap-8">
+                <h2 class="font-headline-lg text-primary">Have an idea? Let's build it.</h2>
+                <p class="font-body-lg text-on-surface-variant max-w-2xl">
+                    Whether you need a full-scale enterprise application or a prototype for your startup, I'm ready to bring your vision to life.
+                </p>
+                <a class="btn-primary btn-glow" href="contact.html" style="padding: 20px 48px; font-size: 16px;">
+                    Start a Project Today
+                </a>
             </div>
         </section>
     </main>

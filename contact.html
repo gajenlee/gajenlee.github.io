@@ -17,22 +17,11 @@
             background-image: radial-gradient(circle at 2px 2px, rgba(0, 220, 229, 0.1) 1px, transparent 0);
             background-size: 32px 32px;
         }
-        .glow-hover {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 48px;
-            width: 48px;
-            border-radius: 0.5rem;
-            background-color: var(--surface-container-low);
-            border: 1px solid var(--outline-variant);
-            color: var(--on-surface);
-            transition: all 0.3s ease;
-        }
-        .glow-hover:hover {
-            box-shadow: 0 0 15px rgba(0, 245, 255, 0.1);
-            border-color: var(--primary-container);
-            color: var(--primary-container);
+        @keyframes ping {
+            75%, 100% {
+                transform: scale(2);
+                opacity: 0;
+            }
         }
     </style>
 </head>
@@ -50,9 +39,12 @@
                 <a class="nav-link font-body-md" href="experience.html">Experience</a>
                 <a class="nav-link font-body-md active" href="contact.html">Contact</a>
             </div>
-            <button class="menu-toggle text-primary">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
+            <div class="flex items-center gap-4">
+                <a href="contact.html" class="btn-primary btn-glow nav-cta" style="padding: 10px 24px;">Start a Project</a>
+                <button class="menu-toggle text-primary">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
         </div>
     </nav>
     <!-- Main Content -->
@@ -62,11 +54,10 @@
             <div class="md:col-span-5 flex flex-col gap-8">
                 <div>
                     <h1 class="font-headline-lg text-primary mb-4" style="margin-bottom: 16px;">
-                        Initialize<br />Connection.
+                        Let's build something exceptional.
                     </h1>
                     <p class="font-body-lg text-on-surface-variant max-w-md">
-                        Open a channel for discussion regarding systems architecture, technical leadership, or
-                        high-scale engineering challenges.
+                        Have a project in mind? Looking for an elite engineering partner? Fill out the form and I'll get back to you within 24 hours.
                     </p>
                 </div>
                 
@@ -74,29 +65,92 @@
                     <!-- Status Indicator -->
                     <div class="flex items-center gap-3">
                         <div class="relative flex" style="height: 12px; width: 12px;">
-                            <span class="absolute rounded-full bg-secondary" style="height: 100%; width: 100%; opacity: 0.75; animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;"></span>
+                            <span class="absolute rounded-full bg-secondary" style="height: 100%; width: 100%; opacity: 0.75; animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;"></span>
                             <span class="relative rounded-full bg-secondary" style="height: 12px; width: 12px; display: inline-flex;"></span>
                         </div>
                         <span class="font-label-caps text-secondary uppercase tracking-widest">Available for New Projects</span>
                     </div>
                     
                     <!-- Direct Links -->
-                    <div class="flex gap-4">
-                        <a class="glow-hover" href="https://github.com/gajenlee" aria-label="GitHub">
-                            <span class="material-symbols-outlined icon-filled">code</span>
+                    <div class="flex flex-col gap-4 mt-4">
+                        <a href="mailto:leegajen@gmail.com" class="flex items-center gap-4 text-on-surface-variant hover:text-primary transition-colors">
+                            <span class="material-symbols-outlined">mail</span>
+                            <span class="font-body-md">leegajen@gmail.com</span>
                         </a>
-                        <a class="glow-hover" href="mailto:leegajen@gmail.com" aria-label="Email">
-                            <span class="material-symbols-outlined icon-filled">mail</span>
-                        </a>
+                        <div class="flex items-center gap-4 text-on-surface-variant">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <span class="font-body-md">Colombo, Sri Lanka</span>
+                        </div>
                     </div>
-                    
-                    <!-- Code Snippet -->
-                    <div class="font-code-sm text-on-surface-variant p-6 rounded-lg border" style="background-color: #020617; margin-top: 32px;">
-                        <span class="text-primary-container">const</span> contact <span class="text-secondary">=</span> {<br />
-                        &nbsp;&nbsp;email: <span class="text-tertiary-fixed-dim">'leegajen@gmail.com'</span>,<br />
-                        &nbsp;&nbsp;location: <span class="text-tertiary-fixed-dim">'Sri Lanka, Uva, Badulla, Bandarawela'</span><br />
-                        };
-                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="md:col-span-7">
+                <div class="card p-8" style="background-color: rgba(19, 27, 46, 0.7);">
+                    <form id="contact-form" onsubmit="sendEmail(event)">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" class="form-input" placeholder="Jane Doe" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" class="form-input" placeholder="jane@example.com" required />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-type" class="form-label">Project Type</label>
+                            <select id="project-type" class="form-input" style="appearance: none;">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="Custom Web Application">Custom Web Application</option>
+                                <option value="Backend API Development">Backend API Development</option>
+                                <option value="AI / LLM Integration">AI / LLM Integration</option>
+                                <option value="Custom Software">Custom Software</option>
+                                <option value="POS System Development">POS System Development</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Estimated Budget</label>
+                            <select id="budget" class="form-input" style="appearance: none;">
+                                <option value="" disabled selected>Select a range</option>
+                                <option value="$100 - $200">$100 - $200</option>
+                                <option value="$200 - $300">$200 - $300</option>
+                                <option value="$500 - $1k">$500 - $1k</option>
+                                <option value="$1k - $2k"> $1k - $2k</option>
+                                <option value="$2k - $5k"> $2k - $5k</option>
+                                <option value="$5k - $10k">$5k - $10k</option>
+                                <option value="$10k - $25k">$10k - $25k</option>
+                                <option value="$25k+">$25k+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Project Details</label>
+                            <textarea id="message" class="form-input" placeholder="Tell me about your goals, timeline, and requirements..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-glow w-full" style="width: 100%; margin-top: 16px;">
+                            Send Inquiry
+                        </button>
+                    </form>
+                    <script>
+                        function sendEmail(e) {
+                            e.preventDefault();
+                            const name = document.getElementById('name').value;
+                            const type = document.getElementById('project-type').value || 'Not specified';
+                            const budget = document.getElementById('budget').value || 'Not specified';
+                            const message = document.getElementById('message').value;
+                            
+                            const subject = encodeURIComponent(`Project Inquiry: ${type}`);
+                            const body = encodeURIComponent(`Name: ${name}\nProject Type: ${type}\nBudget: ${budget}\n\nDetails:\n${message}`);
+                            
+                            window.location.href = `mailto:leegajen@gmail.com?subject=${subject}&body=${body}`;
+                        }
+                    </script>
                 </div>
             </div>
         </div>
@@ -116,13 +170,5 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
-    <style>
-        @keyframes ping {
-            75%, 100% {
-                transform: scale(2);
-                opacity: 0;
-            }
-        }
-    </style>
 </body>
 </html>

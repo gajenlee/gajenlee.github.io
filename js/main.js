@@ -27,11 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.nav-link');
     
     links.forEach(link => {
-        if (link.getAttribute('href') === currentPath || 
-            (currentPath === '/' && link.getAttribute('href') === '/index.html')) {
+        // Create URL objects to reliably compare pathnames
+        const linkPath = new URL(link.href).pathname;
+        
+        // Remove hardcoded active class first to let JS handle it cleanly
+        link.classList.remove('active');
+        
+        if (linkPath === currentPath || 
+           (currentPath.endsWith('/') && linkPath.endsWith('/index.html'))) {
             link.classList.add('active');
-        } else {
-            link.classList.remove('active');
         }
     });
 });

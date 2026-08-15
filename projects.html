@@ -58,12 +58,15 @@
                 </p>
             </section>
             <!-- Projects Grid -->
-            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" style="margin-top: 20px;">
                 <!-- Project Card 1 -->
-                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
+                <article class="card flex flex-col gap-6">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
                         <span class="material-symbols-outlined text-primary">api</span>
-                        <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">Enterprise</span>
+                        <div class="flex gap-2">
+                            <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">Enterprise</span>
+                            <span class="font-code-sm text-error bg-error-container px-2 py-1 rounded border border-error">Private</span>
+                        </div>
                     </div>
                     <div class="flex flex-col gap-2" style="flex-grow: 1;">
                         <h3 class="font-headline-md text-on-surface" style="font-size: 22px; line-height: 1.2;">POS Client Backend &amp; Simphony Mobile</h3>
@@ -78,10 +81,47 @@
                         <span class="font-code-sm bg-primary-container text-on-primary-container px-2 py-1 rounded-sm">React Native</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">SQL Server</span>
                     </div>
-                    <div class="card-hint">Read Case Study</div>
+                </article>
+                <!-- Project Card 7 -->
+                <article class="card project-card flex flex-col gap-6">
+                    <div class="flex justify-between items-start" style="align-items: flex-start;">
+                        <span class="material-symbols-outlined text-primary">account_tree</span>
+                        <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">Core CS</span>
+                    </div>
+                    <div class="flex flex-col gap-2" style="flex-grow: 1;">
+                        <h3 class="font-headline-md text-on-surface" style="font-size: 22px; line-height: 1.2;">Bus Reservation System</h3>
+                        <p class="font-body-md text-on-surface-variant mt-2 line-clamp-3" title="This bus reservation system leverages core Abstract Data Types (ADTs) to effectively manage its operations. A queue ensures fair processing of customer requests whether it's for booking new reservations, changing existing seats, or canceling reservations by adhering to a First-In, First-Out (FIFO) structure. An AVL tree efficiently stores and retrieves both customer and bus information. The AVL tree's self-balancing nature ensures consistently fast performance for searching, adding, or removing data, which is crucial for a system with frequent updates. Seat allocation within each bus is managed dynamically using a linked list, accurately reflecting the real-world arrangement of seats.">
+                            Leverages core Abstract Data Types (ADTs) to effectively manage operations. A queue ensures fair processing of reservations, while an AVL tree efficiently stores and retrieves data. Seat allocation is managed dynamically using linked lists.
+                        </p>
+                    </div>
+                    <div class="flex" style="flex-wrap: wrap; gap: 8px; padding-top: 16px; border-top: 1px solid rgba(58, 73, 74, 0.5);">
+                        <span class="font-code-sm bg-primary-container text-on-primary-container px-2 py-1 rounded-sm">Data Structures</span>
+                        <span class="font-code-sm bg-primary-container text-on-primary-container px-2 py-1 rounded-sm">Algorithms</span>
+                        <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">C++</span>
+                    </div>
+                    <div class="card-hint"><a href="https://github.com/gajenlee/BusReservationSystem" target="_blank" rel="noopener noreferrer">View Work</a></div>
+                </article>
+                <!-- Project Card 8 -->
+                <article class="card project-card flex flex-col gap-6">
+                    <div class="flex justify-between items-start" style="align-items: flex-start;">
+                        <span class="material-symbols-outlined text-secondary">sports_esports</span>
+                        <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">AI / ML</span>
+                    </div>
+                    <div class="flex flex-col gap-2" style="flex-grow: 1;">
+                        <h3 class="font-headline-md text-on-surface" style="font-size: 22px; line-height: 1.2;">Ping-Pong Deep Q-Network</h3>
+                        <p class="font-body-md text-on-surface-variant mt-2 line-clamp-3" title="This project implements a Ping-Pong game using pygame and trains an AI agent using torch (PyTorch). The AI observes the ball's position and velocity, and learns how to move its paddle to successfully intercept the ball through trial and error. The model is trained using a Deep Q-Network (DQN).">
+                            An implementation of a classic Ping-Pong game featuring an AI agent. The agent observes game state variables and utilizes a Deep Q-Network (DQN) architecture to learn optimal paddle positioning through reinforcement learning and trial and error.
+                        </p>
+                    </div>
+                    <div class="flex" style="flex-wrap: wrap; gap: 8px; padding-top: 16px; border-top: 1px solid rgba(58, 73, 74, 0.5);">
+                        <span class="font-code-sm bg-secondary-container text-on-secondary-container px-2 py-1 rounded-sm">Python</span>
+                        <span class="font-code-sm bg-secondary-container text-on-secondary-container px-2 py-1 rounded-sm">PyTorch</span>
+                        <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">Pygame</span>
+                    </div>
+                    <div class="card-hint"><a href="https://github.com/gajenlee/PingPongGameWithML" target="_blank" rel="noopener noreferrer">View Work</a></div>
                 </article>
                 <!-- Project Card 2 -->
-                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
+                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
                         <span class="material-symbols-outlined text-secondary">smart_toy</span>
                         <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">AI / ML</span>
@@ -98,10 +138,10 @@
                         <span class="font-code-sm bg-secondary-container text-on-secondary-container px-2 py-1 rounded-sm">LangChain</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">React</span>
                     </div>
-                    <div class="card-hint">Read Case Study</div>
+                    <div class="card-hint"><a href="https://github.com/gajenlee/ChatBotPro" target="_blank" rel="noopener noreferrer">View Work</a></div>
                 </article>
                 <!-- Project Card 3 -->
-                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
+                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
                         <span class="material-symbols-outlined text-primary">movie</span>
                         <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">Automation</span>
@@ -118,10 +158,10 @@
                         <span class="font-code-sm bg-primary-container text-on-primary-container px-2 py-1 rounded-sm">FFmpeg</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">AWS S3</span>
                     </div>
-                    <div class="card-hint">Read Case Study</div>
+                    <div class="card-hint"><a href="https://github.com/gajenlee/VideoMakerBot" target="_blank" rel="noopener noreferrer">View Work</a></div>
                 </article>
                 <!-- Project Card 4 -->
-                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
+                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
                         <span class="material-symbols-outlined text-primary">school</span>
                         <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">SaaS</span>
@@ -139,10 +179,10 @@
                         <span class="font-code-sm bg-primary-container text-on-primary-container px-2 py-1 rounded-sm">PostgreSQL</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">Prisma</span>
                     </div>
-                    <div class="card-hint">Read Case Study</div>
+                    <div class="card-hint"><a href="https://github.com/gajenlee/FindUp" target="_blank" rel="noopener noreferrer">View Work</a></div>
                 </article>
                 <!-- Project Card 5 -->
-                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
+                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
                         <span class="material-symbols-outlined text-secondary">shield</span>
                         <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">AI / ML</span>
@@ -159,10 +199,10 @@
                         <span class="font-code-sm bg-secondary-container text-on-secondary-container px-2 py-1 rounded-sm">scikit-learn</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">Pandas</span>
                     </div>
-                    <div class="card-hint">Read Case Study</div>
+                    <div class="card-hint"><a href="https://github.com/gajenlee/Spam-Email-Detection" target="_blank" rel="noopener noreferrer">View Work</a></div>
                 </article>
                 <!-- Project Card 6 -->
-                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;" onclick="window.location.href='contact.html'">
+                <article class="card project-card flex flex-col gap-6" style="cursor: pointer;">
                     <div class="flex justify-between items-start" style="align-items: flex-start;">
                         <span class="material-symbols-outlined text-primary">shopping_cart</span>
                         <span class="font-code-sm text-on-surface-variant bg-surface px-2 py-1 rounded border">Web</span>
@@ -180,7 +220,7 @@
                         <span class="font-code-sm bg-primary-container text-on-primary-container px-2 py-1 rounded-sm">MySQL</span>
                         <span class="font-code-sm bg-surface-bright text-on-surface px-2 py-1 rounded-sm border border-outline-variant">JavaScript</span>
                     </div>
-                    <div class="card-hint">Read Case Study</div>
+                    <div class="card-hint"><a href="https://github.com/gajenlee/MalcolmLismorePhotographyWebsite" target="_blank" rel="noopener noreferrer">View Work</a></div>
                 </article>
             </section>
         </div>
